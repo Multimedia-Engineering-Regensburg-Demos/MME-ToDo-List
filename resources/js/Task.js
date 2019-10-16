@@ -6,9 +6,8 @@ class Task {
     this.description = description || "New Task";
     this.id = id || Date.now().toString();
     this.completed = completed || false;
-    this.listeners = {};
   }
-  
+
   setDescription(description) {
     this.description = description;
   }
