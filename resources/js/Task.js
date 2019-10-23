@@ -7,12 +7,16 @@
  * Vgl. "Introducing JavaScript objects" [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects]
  */
 
+const DEFAULT_TASK_TEXT = "New Task";
+
 class Task {
 
   /**
-   * Constructor function, wird aufgerufen, wenn mittels "new Task()" ein neues Task-Objekt erstellt wird
+   * Constructor function, wird aufgerufen, wenn mittels "new Task()" ein neues Task-Objekt erstellt wird. Für möglicherweise
+   * nicht übergebene Parameter werden Default-Werte definiert.
    */
-  constructor(description, id, completed) {
+  constructor(description = DEFAULT_TASK_TEXT, id = Date.now().toString(),
+    completed = false) {
     /**
      * Das this-Schlüsselwort verweist in Javascript immer auf den Kontext, in dem eine Funktion ausgeführt wird und
      * unterscheidet sich grundlegend von dem bekannten "this" aus Java, das auf eine Instanz verweist. In diesem Fall, 
@@ -20,12 +24,11 @@ class Task {
      *
      * Eigenschaften können in Javascript jederzeit zu Objekten hinzugefügt werden
      */
-    this.description = description || "New Task";
-    this.id = id || Date.now().toString();
-    this.completed = completed || false;
-    this.listeners = {};
+    this.description = description;
+    this.id = id;
+    this.completed = completed;
   }
-  
+
   /** 
    * Funktionen und Eigenschaften von Objekten sind in Javascript grundsätzlich "öffentlich", 
    * Zugriffsmodifikatoren existieren ebenso wenig wie Rückgabe- oder Parametertypen.
