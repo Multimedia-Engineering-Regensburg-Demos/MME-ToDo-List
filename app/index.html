@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Meine Aufgaben</title>
-	<link rel="stylesheet" type="text/css" href="vendors/fontello/css/fontello.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Aufgaben</title>
+    <link rel="stylesheet" type="text/css" href="vendors/fontello/css/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
 </head>
 
 <body>
-	<div id="content">
+    <div id="content">
         <h1>Meine Aufgaben</h1>
         <div id="tasks">
             <ul class="task-list">
@@ -22,22 +22,22 @@
         </div>
     </div>
 
-	<!-- Template-Tags werden beim Rendern der HTML-Seite nicht berücksichtigt. Trotzdem werden Sie im DOM-Baum eingefügt und
+    <!-- Template-Tags werden beim Rendern der HTML-Seite nicht berücksichtigt. Trotzdem werden Sie im DOM-Baum eingefügt und
 		können zur Laufzeit von uns selektiert und verwendet werden. Wir benutzten die Tags um Vorlagen für HTML-Elemente zu 
 		erstellen, die beim Start der Anwendung noch nicht benötigt werden, aber zur Laufzeit erstellt und angezeigt werden müssen -->
-	<template id="task-template">
-		<li class="task" data-id="">
-				<input type="checkbox" name="task-status" class="task-status-checkbox">
-				<input type="text" name="task-text" class="task-text-input">
-			</li>
-	</template>
+    <template id="task-template">
+        <li class="task" data-id="">
+            <input type="checkbox" name="task-status" class="task-status-checkbox">
+            <input type="text" name="task-text" class="task-text-input">
+        </li>
+    </template>
 </body>
 
 <!-- Die Datei app.js aus dem resources-Ordner wird hier als "Modul" eingebunden. 
-Beim Starten der Anwendung, bzw. beim Laden dieser HTML-Datei durch den Browser wird die verlinkte Java-Datei
+Beim Starten der Anwendung, bzw. beim Laden dieser HTML-Datei durch den Browser wird die verlinkte Javascript-Datei
 ausgeführt, d.h. der dort notierte Javascript-Code wird von der Javascript-Engine interpretiert. Das Attribut "type"
 signalisiert dem Browser, dass die verlinkte Datei als Modul zu interpretieren ist und erlaubt uns dadurch u.a., die Im- und
 Export-Mechanismen zu verwenden. -->
-<script type="module" src="resources/js/app.js" ></script>
+<script type="module" src="resources/js/app.js"></script>
 
 </html>
