@@ -1,6 +1,6 @@
 # ToDo-Liste
 
-Informationen und eine Anleitung zur Implementierung der Demo finden Sie [hier](https://regensburger-forscher.de/mme/Demos/todo-list/).
+Informationen und eine Anleitung zur Implementierung der Demo finden Sie [hier](https://multimedia-engineering.git-pages.uni-regensburg.de/mme-online/#/Demos/todo-list).
 
 ## Download
 
