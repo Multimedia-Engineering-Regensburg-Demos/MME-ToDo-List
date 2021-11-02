@@ -1,23 +1,26 @@
 {
-  "name": "mme-demo-01-todo",
-  "version": "1.0.0",
-  "description": "A simple Todo App",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List.git"
-  },
-  "author": "Alexander Bazo <alexander.bazo@ur.de>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List/issues"
-  },
-  "homepage": "https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List#readme",
-  "dependencies": {
-    "http-server": "^0.11.1"
-  }
+    "name": "mme-demo-03-todo",
+    "version": "1.0.0",
+    "description": "A simple Todo App",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "setup": "npm install",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List.git"
+    },
+    "author": "Alexander Bazo <alexander.bazo@ur.de>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List/issues"
+    },
+    "homepage": "https://github.com/Multimedia-Engineering-Regensburg-Demos/MME-ToDo-List#readme",
+    "dependencies": {
+        "eslint": "^8.0.1",
+        "express": "^4.17.1",
+        "open": "^8.3.0"
+    }
 }
